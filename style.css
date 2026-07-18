@@ -145,6 +145,48 @@ header .search i {
     }
 }
 
+/* sideBar */
+
+.sideBar{
+    width: 280px;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+.XIcon{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 19px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.XIcon:hover{
+    color: #ff5e13;
+}
+.sideBar ul{
+    border-top: 1px solid rgb(199, 199, 199);
+    margin-top: 50px;
+}
+.sideBar ul li{
+    border-bottom: 1px solid rgb(199, 199, 199);
+    padding: 15px 0 15px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+.sideBar ul li:hover{
+    color: #1EC6B6;
+}
+.sideBar ul li i{
+    font-size: 13px;
+}
+
 /* hero section */
 
 .sec1-hero {
