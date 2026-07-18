@@ -151,7 +151,7 @@ header .search i {
     width: 280px;
     background-color: white;
     position: fixed;
-    left: 0;
+    left: -280px;
     top: 0;
     bottom: 0;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -189,7 +189,7 @@ header .search i {
 
 /* hero section */
 
-.sec1-hero {
+.hero {
     background-image: url(./Images/banner.png.webp);
     height: 650px;
     background-size: cover;
@@ -202,18 +202,28 @@ header .search i {
     align-items: center;
 }
 
-.sec1-hero h1 {
-    font-size: 150px;
+.hero h1 {
+    font-size: 110px;
     font-weight: 500;
     font-family: "Nothing You Could Do", cursive;
 }
+@media screen and (min-width: 600px){
+    .hero h1{
+        font-size: 130px;
+    }
+}
+@media screen and (min-width: 700px){
+    .hero h1{
+        font-size: 140px;
+    }
+}
 
-.sec1-hero p {
+.hero p {
     font-size: 20px;
     margin-top: -25px;
 }
 
-.sec1-hero button {
+.hero button {
     background-color: #1EC6B6;
     border: none;
     border-radius: 5px;
@@ -222,12 +232,15 @@ header .search i {
     color: whitesmoke;
     font-size: 16px;
     font-weight: 600;
-}
-
-.sec1-hero button:hover {
-    background-color: #ff4a52;
+    transition: all 0.3s;
     cursor: pointer;
 }
+
+.hero button:hover {
+    background-color: #ff4a52;
+}
+
+/* .inputs-below-sec1-hero */
 
 .inputs-below-sec1-hero {
     background: #040E27;
