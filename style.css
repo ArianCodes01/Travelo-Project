@@ -403,9 +403,9 @@ select {
    transition: all 0.3s ease;
 }
 
-/* input-below-sec2 section */
+/* newletter-area section */
 
-.input-below-sec2 {
+.newletter-area {
    background-image: url(./Images/newsletter.png.webp);
    background-repeat: no-repeat;
    background-position: center center;
@@ -414,34 +414,35 @@ select {
    background-blend-mode: multiply;
    background-color: rgb(79, 81, 105);
    color: whitesmoke;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 40px;
 }
 
-.input-below-sec2 h2 {
+.newletter-area h2 {
    font-weight: 400;
 }
 
-.input-below-sec2 p {
+.newletter-area p {
    color: #929090;
    font-size: 15px;
    width: 280px;
    line-height: 25px;
    margin-top: 12px;
 }
-
-.input-below-sec2 form input {
+.newletter-area form input {
    background-color: white;
-   width: 400px;
+   width: 100%;
+   padding: 16px 15px;
+   border-radius: 5px;
+   border: none;
+   font-size: 17px;
+   outline: none;
+   margin-bottom: 15px;
 }
 
-.input-below-sec2 form input::placeholder {
-   font-size: 16px;
+.newletter-area form input::placeholder {
+   color: rgb(189, 189, 189);
 }
 
-.input-below-sec2 button {
+.newletter-area button {
    padding: 16px 15px;
    background-color: #FF4A52;
    border: none;
@@ -449,13 +450,26 @@ select {
    color: whitesmoke;
    font-size: 17px;
    font-weight: 600;
+   width: 100%;
 }
 
-.input-below-sec2 button:hover {
+.newletter-area button:hover {
    background-color: #1EC6B6;
    transition: 0.3s;
    cursor: pointer;
 }
+@media screen and (min-width: 768px){
+   .newletter-area button{
+      margin-left: 10px;
+   }
+}
+@media screen and (min-width: 992px){
+   .newletter-area button{
+      width: 120%;
+   }
+}
+
+/* popular-places */
 
 .popular-places {
    background: whitesmoke;
