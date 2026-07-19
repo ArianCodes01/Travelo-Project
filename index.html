@@ -2,84 +2,104 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <title>Travelo Project</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <link rel="stylesheet" href="responsive.css">
+  <title>Travelo Project</title>
 </head>
 
 <body>
-    <!-- header section -->
-    <header>
-        <div class="left-header">
-            <img src="./Images/logo.png.webp">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Destination</li>
-                <li>Pages <i class="fa-solid fa-angle-down"></i></li>
-                <li>Blog <i class="fa-solid fa-angle-down"></i></li>
-                <li>Contact</li>
-            </ul>
+  <!-- header section -->
+  <header>
+    <div class="left-header">
+      <img src="./Images/logo.png.webp">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Destination</li>
+        <li>Pages <i class="fa-solid fa-angle-down"></i></li>
+        <li>Blog <i class="fa-solid fa-angle-down"></i></li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="right-header">
+      <div class="phone-number">
+        <i class="fa-solid fa-phone"></i>
+        <p>10(256)-928 256</p>
+      </div>
+      <span class="line-header"></span>
+      <div class="social-icons">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-google-plus-g"></i>
+      </div>
+      <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <i class="fa-solid fa-bars barsIcon" id="barsIcon"></i>
+    </div>
+  </header>
+
+  <!-- sideBar section -->
+  <aside class="sideBar" id="sideBar">
+    <i class="fa-solid fa-x XIcon" id="XIcon"></i>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Destination</li>
+      <li>Pages <i class="fa-solid fa-chevron-down"></i></li>
+      <li>Blog <i class="fa-solid fa-chevron-down"></i></li>
+      <li>Contact</li>
+    </ul>
+  </aside>
+
+  <!-- hero section -->
+  <section class="hero">
+    <h1>Indonesia</h1>
+    <p>Pixel perfect design with awesome contents</p>
+    <button>Explore Now</button>
+  </section>
+
+  <!-- where-togo-area section -->
+  <div class="where-togo-area">
+    <div class="container">
+      <div class="row align-center">
+        <div class="col-xs-12 col-lg-3">
+          <h4>Where you want to go?</h4>
         </div>
-        <div class="right-header">
-            <div class="phone-number">
-                <i class="fa-solid fa-phone"></i>
-                <p>10(256)-928 256</p>
-            </div>
-            <span class="line-header"></span>
-            <div class="social-icons">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-google-plus-g"></i>
-            </div>
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <i class="fa-solid fa-bars barsIcon" id="barsIcon"></i>
+
+        <div class="col-xs-12 col-lg-9">
+          <div class="search-wrap">
+            <form class="search-form">
+              <div class="row">
+                <div class="col-xs-12 col-lg-3">
+                  <input type="text" placeholder="Where to go?">
+                </div>
+                <div class="col-xs-12 col-lg-3">
+                  <input type="date" placeholder="Date">
+                </div>
+                <div class="col-xs-12 col-lg-3">
+                  <select>
+                    <option selected disabled>Travel type</option>
+                    <option>Some option</option>
+                    <option>Another option</option>
+                  </select>
+                </div>
+
+                <div class="col-xs-12 col-lg-3">
+                  <button>Search</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-    </header>
+      </div>
+    </div>
+  </div>
 
-    <aside class="sideBar" id="sideBar">
-        <i class="fa-solid fa-x XIcon" id="XIcon"></i>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Destination</li>
-            <li>Pages <i class="fa-solid fa-chevron-down"></i></li>
-            <li>Blog <i class="fa-solid fa-chevron-down"></i></li>
-            <li>Contact</li>
-        </ul>
-    </aside>
-
-    <!-- hero section -->
-    <section class="hero">
-        <h1>Indonesia</h1>
-        <p>Pixel perfect design with awesome contents</p>
-        <button>Explore Now</button>
-    </section>
-
-    <!-- inputs-below-sec1-hero section -->
-    <!-- <div class="inputs-below-sec1-hero">
-        <div class="container">
-            <div class="inputs-under-sec1-hero">
-                <h4>Where you want to go?</h4>
-                <form>
-                    <input type="text" placeholder="Where to go?">
-                    <input type="date" placeholder="Date">
-                    <select>
-                        <option selected disabled>Travel type</option>
-                        <option>Some option</option>
-                        <option>Another option</option>
-                    </select>
-                    <button>Search</button>
-                </form>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- sec2 section -->
-    <!-- <div class="sec2">
+  <!-- sec2 section -->
+  <!-- <div class="sec2">
         <div class="container">
             <h1>Popular Destination</h1>
             <p class="desc-below-h1-sec2">Suffered alteration in some form, by injected humour or good day randomised
@@ -132,8 +152,8 @@
         </div>
     </div> -->
 
-    <!-- input-below-sec2 section -->
-    <!-- <div class="input-below-sec2">
+  <!-- input-below-sec2 section -->
+  <!-- <div class="input-below-sec2">
         <div>
             <h2>Subscribe Our Newsletter</h2>
             <p>Subscribe newsletter to get offers and about new places to discover.</p>
@@ -144,8 +164,8 @@
         </form>
     </div> -->
 
-    <!-- popular-places section -->
-    <!-- <div class="popular-places">
+  <!-- popular-places section -->
+  <!-- <div class="popular-places">
         <div class="container">
             <h1>Popular Places</h1>
             <p class="desc-below-h1">Suffered alteration in some form, by injected humour or good day randomised booth
@@ -313,14 +333,14 @@
         </div>
     </div> -->
 
-    <!-- video-under-popular-places section -->
-    <!-- <div class="video-under-popular-places">
+  <!-- video-under-popular-places section -->
+  <!-- <div class="video-under-popular-places">
         <h1>Enjoy Video</h1>
         <button><i class="fa-solid fa-play"></i></button>
     </div> -->
 
-    <!-- under-video section -->
-    <!-- <div class="under-video">
+  <!-- under-video section -->
+  <!-- <div class="under-video">
         <div class="container">
             <div class="divs-3--under-video">
                 <div class="div1-under-video">
@@ -342,8 +362,8 @@
         </div>
     </div> -->
 
-    <!-- tom-mouse-profile section -->
-    <!-- <div class="tom-mouse-profile">
+  <!-- tom-mouse-profile section -->
+  <!-- <div class="tom-mouse-profile">
         <img src="./Images/author.png.webp">
         <p class="desc-tom-mouse-profile">"Working in conjunction with humanitarian aid agencies, we have supported
             programmes to help alleviate human suffering.</p>
@@ -355,8 +375,8 @@
         </div>
     </div> -->
 
-    <!-- recent-trips section -->
-    <!-- <div class="recent-trips">
+  <!-- recent-trips section -->
+  <!-- <div class="recent-trips">
         <div class="container">
             <h1>Recent Trips</h1>
             <div class="divs-3-recent-trips">
@@ -380,8 +400,8 @@
         </div>
     </div> -->
 
-    <!-- footer section -->
-    <!-- <footer>
+  <!-- footer section -->
+  <!-- <footer>
         <div class="container">
             <div class="middle-left-right-footer">
                 <div class="left-footer">
@@ -440,7 +460,7 @@
     </footer> -->
 
 
-    <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
