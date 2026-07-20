@@ -664,31 +664,28 @@ select {
 
 /* under-video */
 
-.under-video {
+.travel-variation {
    padding: 120px;
    text-align: center;
 }
 
-.divs-3--under-video {
-   display: flex;
-}
-
-.div1-under-video {
+.travel-item {
    padding: 20px;
 }
 
-.div1-under-video h3 {
+.travel-item h3 {
    font-weight: 400;
    font-size: 23px;
    margin-top: 35px;
    margin-bottom: 10px;
 }
 
-.div1-under-video p {
+.travel-item p {
    color: #777777;
-   width: 350px;
    line-height: 27px;
 }
+
+/* tom-mouse-profile section */
 
 .tom-mouse-profile {
    background-color: #f7fafd;
