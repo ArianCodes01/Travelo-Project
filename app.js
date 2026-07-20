@@ -9,3 +9,14 @@ barsIcon.onclick = function(){
 XIcon.onclick = function(){
     sideBar.style.left = "-280px"
 }
+
+let ScrollTop = document.getElementById('ScrollTop')
+
+window.onscroll = function(){
+    if(window.scrollY > 400){
+        ScrollTop.style.display = "flex";
+    }
+    else{
+        ScrollTop.style.display = "none";
+    }
+}
