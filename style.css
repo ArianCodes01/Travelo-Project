@@ -623,7 +623,7 @@ select {
 
 /* video-under-popular-places */
 
-.video-under-popular-places {
+.video-area {
    background-image: url(./Images/video.png.webp);
    background-repeat: no-repeat;
    background-position: center center;
@@ -637,24 +637,32 @@ select {
    color: whitesmoke;
 }
 
-.video-under-popular-places h1 {
+.video-area h1 {
    font-family: "Nothing You Could Do", cursive;
    font-weight: 400;
-   font-size: 90px;
+   font-size: 55px;
+}
+@media screen and (min-width: 768px){
+   .video-area h1{
+      font-size: 80px;
+   }
 }
 
-.video-under-popular-places button {
+.video-area button {
    background-color: #1EC6B6;
    border: none;
    border-radius: 100%;
    width: 84px;
    height: 84px;
+   cursor: pointer;
 }
 
-.video-under-popular-places button i {
+.video-area button i {
    color: whitesmoke;
    font-size: 18px;
 }
+
+/* under-video */
 
 .under-video {
    padding: 120px;
