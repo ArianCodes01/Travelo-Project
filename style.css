@@ -642,8 +642,9 @@ select {
    font-weight: 400;
    font-size: 55px;
 }
-@media screen and (min-width: 768px){
-   .video-area h1{
+
+@media screen and (min-width: 768px) {
+   .video-area h1 {
       font-size: 80px;
    }
 }
@@ -687,35 +688,40 @@ select {
 
 /* tom-mouse-profile section */
 
-.tom-mouse-profile {
+.testimonials {
    background-color: #f7fafd;
-   padding: 120px 0;
+   padding: 120px 20px;
    text-align: center;
 }
 
-.desc-tom-mouse-profile {
-   width: 600px;
+.testimonials p {
+   max-width: 600px;
    font-size: 18px;
    line-height: 26px;
    margin: 35px auto 15px;
 }
 
-.tom-mouse-p {
+.testimonials .testmonial_author h3 {
    color: #777777;
+   font-weight: 400;
+   font-size: 16px;
 }
 
-.red-dots-tom-mouse-profile span {
+.testimonials .dots span {
    display: inline-block;
    width: 12px;
    height: 12px;
    background-color: #999797;
    border-radius: 100%;
-   margin: 30px 4px 0;
+   margin: 30px 2px 0;
+   cursor: pointer;
 }
 
-.red-dot-tom-mouse {
-   background-color: #FF4A52 !important;
+.testimonials .red-dot {
+   background-color: #ff5e13 !important;
 }
+
+/* recent-trips section */
 
 .recent-trips {
    padding-top: 150px;
