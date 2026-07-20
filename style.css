@@ -735,34 +735,33 @@ select {
    margin-bottom: 60px;
 }
 
-.divs-3-recent-trips {
-   display: flex;
-   gap: 30px;
-   justify-content: space-between;
-   align-items: center;
-}
-
-.div1-recent-trips {
+.recent-trips .trip-item {
    text-align: left;
-   width: 310px;
+   margin-bottom: 30px;
+}
+.recent-trips .trip-item:hover h3{
+   color: #FF4A52;
+}
+
+.recent-trips .trip-item img {
+   width: 100%;
    border-radius: 5px;
 }
 
-.div1-recent-trips img {
-   width: 310px;
-   border-radius: 5px;
-}
-
-.div1-recent-trips p {
+.recent-trips .trip-item p {
    margin: 10px 0;
    color: #777777;
    font-size: 17.8px;
 }
 
-.div1-recent-trips h3 {
+.recent-trips .trip-item h3 {
    font-size: 22px;
    font-weight: 400;
+   cursor: pointer;
+   transition: all 0.3s ease;
 }
+
+/* footer section */
 
 footer {
    padding: 115px 0 129px;
