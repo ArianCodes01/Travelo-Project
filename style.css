@@ -349,7 +349,8 @@ select {
    transition: all 0.3s ease;
    position: relative;
 }
-.single-destination img{
+
+.single-destination img {
    width: 100%;
 }
 
@@ -371,7 +372,8 @@ select {
 .single-destination:hover .img-text button {
    background: #FF4A52;
 }
-.single-destination:hover .img-text h3{
+
+.single-destination:hover .img-text h3 {
    color: #FF4A52;
 }
 
@@ -427,6 +429,7 @@ select {
    line-height: 25px;
    margin-top: 12px;
 }
+
 .newletter-area form input {
    background-color: white;
    width: 100%;
@@ -458,13 +461,15 @@ select {
    transition: 0.3s;
    cursor: pointer;
 }
-@media screen and (min-width: 768px){
-   .newletter-area button{
+
+@media screen and (min-width: 768px) {
+   .newletter-area button {
       margin-left: 10px;
    }
 }
-@media screen and (min-width: 992px){
-   .newletter-area button{
+
+@media screen and (min-width: 992px) {
+   .newletter-area button {
       width: 120%;
    }
 }
@@ -483,7 +488,7 @@ select {
    margin-bottom: 20px;
 }
 
-.desc-below-h1 {
+.popular-places .top-desc {
    width: 400px;
    margin: 0 auto;
    color: #777777;
@@ -492,26 +497,30 @@ select {
    margin-bottom: 50px;
 }
 
-.all-divs-popular-places {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   gap: 27px;
-}
-
-.div1-all-divs-popular-places {
+.popular-places .place-item {
    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
    border-bottom-left-radius: 5px;
    border-bottom-right-radius: 5px;
 }
 
-.div1-all-divs-popular-places img {
-   border-top-left-radius: 5px;
-   border-top-right-radius: 5px;
-   width: 362px;
+.popular-places .place-item:hover {
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
-.div1-all-divs-popular-places button {
+.popular-places .place-item:hover button {
+   background-color: #ff4a52;
+}
+
+.popular-places .place-item:hover .bottom-content h2 {
+   color: #ff4a52;
+}
+
+.popular-places .place-item img {
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+}
+
+.popular-places .place-item button {
    position: absolute;
    top: 20px;
    left: 20px;
@@ -521,78 +530,98 @@ select {
    font-size: 17.5px;
    color: white;
    background-color: #1EC6B6;
+   cursor: pointer;
+   transition: all 0.3s ease;
 }
 
-.top {
+.popular-places .top-img {
    position: relative;
 }
 
-.bottom {
+.popular-places .top-img img {
+   width: 100%;
+}
+
+.popular-places .bottom-content {
    text-align: left;
    padding: 20px 15px;
 }
 
-.bottom h2 {
+.bottom-content h2 {
    font-weight: 400;
    font-size: 23px;
    margin-bottom: 4px;
+   transition: all 0.3s ease;
+   cursor: pointer;
 }
 
-.bottom small {
+.popular-places .bottom-content small {
    color: #777777;
    font-size: 13.8px;
    margin-bottom: 15px;
    display: block;
 }
 
-.bottom-area-of-bottom {
+.popular-places .review-days {
    display: flex;
    justify-content: space-between;
 }
 
-.review {
+.popular-places .review {
    display: flex;
    gap: 5px;
    align-items: center;
 }
 
-.icons {
+.popular-places .star-icons {
    color: rgb(192, 192, 20);
    font-size: 10px;
    display: flex;
 }
 
-.review-20-p {
+.popular-places .review-p {
    color: #777777;
    font-size: 14px;
+   transition: all 0.3s ease;
+   cursor: pointer;
 }
 
-.days-5 {
+.popular-places .days {
    display: flex;
    gap: 10px;
    align-items: center;
 }
 
-.days-5 i {
+.popular-places .days i {
    color: #777777;
    font-size: 13px;
 }
 
-.days-5 p {
+.popular-places .days p {
    color: #777777;
    font-size: 14px;
+   transition: all 0.3s ease;
+   cursor: pointer;
 }
 
-.button-at-the-end {
-   padding: 13px 39px;
+.popular-places .more-places-btn {
+   padding: 16px 39px;
    background: #FF4A52;
    color: whitesmoke;
    font-size: 16px;
    border-radius: 5px;
    border: none;
    font-weight: 600;
-   margin-top: 70px;
+   margin-top: 60px;
+   cursor: pointer;
+   transition: all 0.3s ease;
 }
+
+.popular-places .more-places-btn:hover {
+   background: #1EC6B6;
+}
+
+/* video-under-popular-places */
 
 .video-under-popular-places {
    background-image: url(./Images/video.png.webp);
