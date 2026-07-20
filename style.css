@@ -739,7 +739,8 @@ select {
    text-align: left;
    margin-bottom: 30px;
 }
-.recent-trips .trip-item:hover h3{
+
+.recent-trips .trip-item:hover h3 {
    color: #FF4A52;
 }
 
@@ -764,24 +765,27 @@ select {
 /* footer section */
 
 footer {
-   padding: 115px 0 129px;
+   padding: 115px 0 0;
    background-color: #040e27;
    color: whitesmoke;
 }
 
-.middle-left-right-footer {
-   display: flex;
-   justify-content: space-between;
+.footer-top {
+   margin-bottom: 100px;
 }
 
-.left-footer p {
+.footer-logo {
+   cursor: pointer;
+}
+
+footer .footer-widget .desc {
    margin-top: 35px;
    color: #a5a4a4;
    font-size: 14px;
    line-height: 27px;
 }
 
-.icons-left-footer {
+footer .social-icons {
    margin-top: 50px;
    font-size: 14px;
    display: flex;
@@ -789,10 +793,13 @@ footer {
    color: #c2c0c0;
 }
 
-.middle-footer {
-   display: flex;
-   justify-content: space-between;
-   width: 350px;
+footer .social-icons i {
+   transition: all 0.3s ease;
+   cursor: pointer;
+}
+
+footer .social-icons i:hover {
+   color: #FF4A52;
 }
 
 footer h3 {
@@ -801,25 +808,89 @@ footer h3 {
    font-size: 21px;
 }
 
-.middle-footer ul {
+footer .footer-widget ul {
    list-style: none;
    line-height: 30px;
    font-size: 14px;
    color: #c2c0c0;
 }
 
-.ul-wrapper {
+footer .footer-widget ul li {
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+footer .footer-widget ul li:hover {
+   color: #FF4A52;
+}
+
+footer .ul-wrapper {
    display: flex;
    gap: 35px;
 }
 
-.images-right-footer {
+footer .instagram-feed {
    display: flex;
    flex-wrap: wrap;
-   gap: 20px;
-   width: 300px;
+   gap: 10px;
 }
 
-.images-right-footer img {
+footer .instagram-feed img {
    border-radius: 7px;
+   cursor: pointer;
+}
+
+/* copy-right-text */
+
+.copy-right-text {
+   padding-bottom: 20px;
+   text-align: center;
+}
+
+.footer-border {
+   border-top: 1px solid #363E52;
+   padding-bottom: 20px;
+}
+
+.copy-right-text .copy-right {
+   font-size: 14px;
+   color: #7A838B;
+   margin-bottom: 0;
+   font-weight: 400;
+   text-align: center;
+}
+
+.copy-right span {
+   display: inline-block;
+   margin-top: 10px;
+}
+
+.copy-right-text .copy-right a {
+   color: #FF4A52;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+@media screen and (min-width: 492px) {
+   footer .instagram-feed img {
+      width: 140px;
+   }
+}
+
+@media screen and (min-width: 768px) {
+   footer .instagram-feed img {
+      width: 101px;
+   }
+}
+
+@media screen and (min-width: 992px) {
+   footer .instagram-feed img {
+      width: 61px;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   footer .instagram-feed img {
+      width: 76px;
+   }
 }
