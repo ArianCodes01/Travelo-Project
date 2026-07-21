@@ -302,7 +302,7 @@ header .search i {
 
 .where-togo-area {
    background: #040E27;
-   padding: 50px 50px;
+   padding: 50px 20px;
    color: whitesmoke;
    text-align: center;
 }
@@ -767,12 +767,28 @@ select {
    line-height: 27px;
 }
 
-/* tom-mouse-profile section */
+/* testimonials section */
 
 .testimonials {
    background-color: #f7fafd;
    padding: 120px 20px;
    text-align: center;
+}
+
+.testimonials .mySwiper {
+   padding-bottom: 70px;
+}
+
+.testimonials .swiper-pagination-bullet {
+   width: 12px;
+   height: 12px;
+   background-color: #999797;
+   border-radius: 100%;
+   cursor: pointer;
+}
+
+.testimonials .swiper-pagination-bullet-active {
+   background-color: #ff5e13;
 }
 
 .testimonials p {
@@ -786,20 +802,6 @@ select {
    color: #777777;
    font-weight: 400;
    font-size: 16px;
-}
-
-.testimonials .dots span {
-   display: inline-block;
-   width: 12px;
-   height: 12px;
-   background-color: #999797;
-   border-radius: 100%;
-   margin: 30px 2px 0;
-   cursor: pointer;
-}
-
-.testimonials .red-dot {
-   background-color: #ff5e13 !important;
 }
 
 /* recent-trips section */

@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head>   
+   <!-- Style.css -->
    <link rel="stylesheet" href="style.css">
+
+   <!-- Font awesome -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+   
+   <!-- Responsive.css -->
    <link rel="stylesheet" href="responsive.css">
+   <!-- Swiper JS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+   
    <title>Travelo Project</title>
 </head>
 
@@ -427,20 +435,52 @@
 
    <!-- testimonials section -->
    <section class="testimonials" id="testimonials">
-      <div class="testimonial-item">
-         <div class="author_thumb">
-            <img src="./Images/author.png.webp">
+      <div class="swiper mySwiper">
+         <div class="swiper-wrapper">
+            <div class="swiper-slide">
+               <div class="testimonial-item">
+                  <div class="author_thumb">
+                     <img src="./Images/author.png.webp" />
+                  </div>
+                  <p>
+                     "Working in conjunction with humanitarian aid agencies, we have
+                     supported programmes to help alleviate human suffering.
+                  </p>
+                  <div class="testmonial_author">
+                     <h3>- Jerry Mouse</h3>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="testimonial-item">
+                  <div class="author_thumb">
+                     <img src="./Images/author.png.webp" />
+                  </div>
+                  <p>
+                     "Working in conjunction with humanitarian aid agencies, we have
+                     supported programmes to help alleviate human suffering.
+                  </p>
+                  <div class="testmonial_author">
+                     <h3>- Tom Mouse</h3>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="testimonial-item">
+                  <div class="author_thumb">
+                     <img src="./Images/author.png.webp" />
+                  </div>
+                  <p>
+                     "Working in conjunction with humanitarian aid agencies, we have
+                     supported programmes to help alleviate human suffering.
+                  </p>
+                  <div class="testmonial_author">
+                     <h3>- Micky Mouse</h3>
+                  </div>
+               </div>
+            </div>
          </div>
-         <p>"Working in conjunction with humanitarian aid agencies, we have supported
-            programmes to help alleviate human suffering.</p>
-         <div class="testmonial_author">
-            <h3>- Jerry Mouse</h3>
-         </div>
-         <div class="dots">
-            <span class="red-dot"></span>
-            <span></span>
-            <span></span>
-         </div>
+         <div class="swiper-pagination"></div>
       </div>
    </section>
 
@@ -570,6 +610,25 @@
 
 
    <script src="app.js"></script>
+
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+   <!-- Initialize Swiper -->
+   <script>
+      var swiper = new Swiper('.mySwiper', {
+         pagination: {
+            el: '.swiper-pagination',
+            clickable : true
+         },
+
+         autoplay:{
+            delay : 5000
+         },
+
+         loop: true
+      });
+   </script>
 </body>
 
 </html>
