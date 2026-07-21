@@ -302,7 +302,7 @@ header .search i {
 
 .where-togo-area {
    background: #040E27;
-   padding: 50px 70px;
+   padding: 50px 50px;
    color: whitesmoke;
    text-align: center;
 }
@@ -325,6 +325,37 @@ select {
    margin-bottom: 20px;
    outline: none;
    width: 100%;
+}
+
+.where-togo-area input[type="date"] {
+   border: none;
+   margin-bottom: 0;
+}
+
+.where-togo-area input[type="date"]::-webkit-calendar-picker-indicator {
+   display: none;
+}
+
+@media screen and (min-width: 992px) {
+   .where-togo-area .select {
+      margin-top: 0 !important;
+   }
+}
+
+.where-togo-area .select {
+   margin-top: 20px;
+}
+
+.input-and-icon {
+   display: flex;
+   align-items: center;
+   border: 1px solid #43495a;
+   border-radius: 5px;
+   color: rgb(179, 172, 172);
+}
+
+.input-and-icon i {
+   margin-right: 5px;
 }
 
 .where-togo-area form input:focus {
