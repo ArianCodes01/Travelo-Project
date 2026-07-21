@@ -25,7 +25,7 @@ header {
    right: 0;
    top: 0;
    background-color: white;
-   z-index: 99999;
+   z-index: 999;
    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -37,8 +37,13 @@ header .left-header {
 }
 
 header .left-header img {
-   padding: 33px 0;
    cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+   header .left-header img {
+      padding: 33px 0;
+   }
 }
 
 header .line-header {
@@ -54,9 +59,10 @@ header ul {
    gap: 30px;
 }
 
-header ul li {
+header ul.main-menu>li {
    cursor: pointer;
    transition: all 0.3s ease;
+   padding: 43px 0;
 }
 
 header ul li:hover {
@@ -66,6 +72,42 @@ header ul li:hover {
 header ul i {
    font-size: 10px;
 }
+
+.dropdown-lis {
+   position: relative;
+}
+
+.dropdown-lis:hover .submenu {
+   visibility: visible;
+   opacity: 1;
+}
+
+.dropdown-lis .submenu {
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
+   width: 200px;
+   position: absolute;
+   left: 0;
+   top: 90px;
+   z-index: 100;
+   display: flex;
+   flex-direction: column;
+   padding: 10px 15px;
+   visibility: hidden;
+   opacity: 0;
+   transition: all 0.3s ease;
+   background-color: white;
+}
+
+.dropdown-lis .submenu li {
+   color: #040E27;
+   font-size: 14px;
+   transition: all 0.3s ease;
+}
+
+.dropdown-lis .submenu li:hover {
+   color: #1EC6B6;
+}
+
 
 header .right-header {
    display: flex;
@@ -164,6 +206,7 @@ header .search i {
    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
    padding: 10px 0;
    transition: all 0.3s ease;
+   z-index: 9999;
 }
 
 .XIcon {
