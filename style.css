@@ -1,1005 +1,1043 @@
-@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 body {
-   font-family: "Rubik", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-   scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* header section */
 
 header {
-   display: flex;
-   justify-content: space-between;
-   position: fixed;
-   left: 0;
-   right: 0;
-   top: 0;
-   background-color: white;
-   z-index: 999;
-   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: white;
+  z-index: 999;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 header .left-header {
-   display: flex;
-   margin-left: 30px;
-   gap: 60px;
-   align-items: center;
+  display: flex;
+  margin-left: 30px;
+  gap: 60px;
+  align-items: center;
 }
 
 header .left-header img {
-   cursor: pointer;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 992px) {
-   header .left-header img {
-      padding: 33px 0;
-   }
+  header .left-header img {
+    padding: 33px 0;
+  }
 }
 
 header .line-header {
-   display: none;
-   width: 1px;
-   height: 30%;
-   background-color: rgb(204, 199, 199);
+  display: none;
+  width: 1px;
+  height: 30%;
+  background-color: rgb(204, 199, 199);
 }
 
 header ul {
-   display: none;
-   list-style: none;
-   gap: 30px;
+  display: none;
+  list-style: none;
+  gap: 30px;
 }
 
-header ul.main-menu>li {
-   cursor: pointer;
-   transition: all 0.3s ease;
-   padding: 43px 0;
+header ul.main-menu > li {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 43px 0;
 }
 
 header ul li:hover {
-   color: #1EC6B6;
+  color: #1ec6b6;
 }
 
 header ul i {
-   font-size: 10px;
+  font-size: 10px;
 }
 
 .dropdown-lis {
-   position: relative;
+  position: relative;
 }
 
 .dropdown-lis:hover .submenu {
-   visibility: visible;
-   opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .dropdown-lis .submenu {
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
-   width: 200px;
-   position: absolute;
-   left: 0;
-   top: 90px;
-   z-index: 100;
-   display: flex;
-   flex-direction: column;
-   padding: 10px 15px;
-   visibility: hidden;
-   opacity: 0;
-   transition: all 0.3s ease;
-   background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
+  width: 200px;
+  position: absolute;
+  left: 0;
+  top: 90px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+  background-color: white;
 }
 
 .dropdown-lis .submenu li {
-   color: #040E27;
-   font-size: 14px;
-   transition: all 0.3s ease;
+  color: #040e27;
+  font-size: 14px;
+  transition: all 0.3s ease;
 }
 
 .dropdown-lis .submenu li:hover {
-   color: #1EC6B6;
+  color: #1ec6b6;
 }
 
-
 header .right-header {
-   display: flex;
-   gap: 20px;
-   align-items: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 header .phone-number {
-   display: none;
+  display: none;
 }
 
 header .phone-number i {
-   color: #ff4a52;
-   font-size: 13px;
-   margin-right: 7px;
+  color: #ff4a52;
+  font-size: 13px;
+  margin-right: 7px;
 }
 
 header .social-icons {
-   display: none;
-   align-items: center;
-   gap: 20px;
-   color: gray;
+  display: none;
+  align-items: center;
+  gap: 20px;
+  color: gray;
 }
 
 header .social-icons i {
-   cursor: pointer;
-   transition: all 0.3s ease;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 header .social-icons i:hover {
-   color: #ff4a52;
+  color: #ff4a52;
 }
 
 header .search {
-   background-color: #ff4a52;
-   padding: 0 40px;
-   display: none;
-   height: 100%;
-   cursor: pointer;
+  background-color: #ff4a52;
+  padding: 0 40px;
+  display: none;
+  height: 100%;
+  cursor: pointer;
 }
 
 header .search i {
-   color: whitesmoke;
+  color: whitesmoke;
 }
 
 .barsIcon {
-   color: #1F1F1F;
-   font-size: 25px;
-   padding-right: 50px;
-   cursor: pointer;
-   transition: all 0.3s ease;
+  color: #1f1f1f;
+  font-size: 25px;
+  padding-right: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .barsIcon:hover {
-   color: #ff5e13;
+  color: #ff5e13;
 }
 
 @media screen and (min-width: 768px) {
-   header .search {
-      display: flex;
-      align-items: center;
-   }
+  header .search {
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 992px) {
-   header ul {
-      display: flex;
-   }
+  header ul {
+    display: flex;
+  }
 
-   .barsIcon {
-      display: none !important;
-   }
+  .barsIcon {
+    display: none !important;
+  }
 }
 
 @media screen and (min-width: 1060px) {
-   header .phone-number {
-      display: flex;
-   }
+  header .phone-number {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 1250px) {
-   header .social-icons {
-      display: flex;
-   }
+  header .social-icons {
+    display: flex;
+  }
 }
 
 /* sideBar */
 
 .sideBar {
-   width: 280px;
-   background-color: white;
-   position: fixed;
-   left: -280px;
-   top: 0;
-   bottom: 0;
-   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-   padding: 10px 0;
-   transition: all 0.3s ease;
-   z-index: 9999;
+  width: 280px;
+  background-color: white;
+  position: fixed;
+  left: -280px;
+  top: 0;
+  bottom: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  z-index: 9999;
 }
 
 .XIcon {
-   position: absolute;
-   right: 20px;
-   top: 20px;
-   font-size: 19px;
-   cursor: pointer;
-   transition: all 0.3s ease;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 19px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .XIcon:hover {
-   color: #ff5e13;
+  color: #ff5e13;
 }
 
 .sideBar ul {
-   border-top: 1px solid rgb(199, 199, 199);
-   margin-top: 50px;
+  border-top: 1px solid rgb(199, 199, 199);
+  margin-top: 50px;
 }
 
 .sideBar ul li {
-   border-bottom: 1px solid rgb(199, 199, 199);
-   padding: 15px 0 15px 20px;
-   cursor: pointer;
-   transition: all 0.3s ease;
-   font-size: 15px;
+  border-bottom: 1px solid rgb(199, 199, 199);
+  padding: 15px 0 15px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 15px;
 }
 
 .sideBar ul li:hover {
-   color: #1EC6B6;
+  color: #1ec6b6;
 }
 
 .sideBar ul li i {
-   font-size: 13px;
+  font-size: 13px;
 }
 
 /* hero section */
 
 .hero {
-   background-image: url(./Images/banner.png.webp);
-   height: 650px;
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center center;
-   color: whitesmoke;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+  position: relative;
+  height: 650px;
+  color: whitesmoke;
+}
+.hero .heroSwipper{
+   height: 100%;
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hero .hero-content {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 545px;
 }
 
 .hero h1 {
-   font-size: 110px;
-   font-weight: 500;
-   font-family: "Nothing You Could Do", cursive;
+  font-size: 80px;
+  font-weight: 500;
+  font-family: "Nothing You Could Do", cursive;
+  margin-bottom: 5px;
 }
 
 @media screen and (min-width: 600px) {
-   .hero h1 {
-      font-size: 130px;
-   }
+  .hero h1 {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero h1 {
+    font-size: 130px;
+  }
 }
 
-@media screen and (min-width: 700px) {
-   .hero h1 {
-      font-size: 140px;
-   }
-}
 
 .hero p {
-   font-size: 20px;
-   margin-top: -25px;
+  font-size: 20px;
+  margin-top: -25px;
 }
 
 .hero button {
-   background-color: #1EC6B6;
-   border: none;
-   border-radius: 5px;
-   padding: 18px 41px;
-   margin-top: 50px;
-   color: whitesmoke;
-   font-size: 16px;
-   font-weight: 600;
-   transition: all 0.3s;
-   cursor: pointer;
+  background-color: #1ec6b6;
+  border: none;
+  border-radius: 5px;
+  padding: 18px 41px;
+  margin-top: 50px;
+  color: whitesmoke;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
 .hero button:hover {
-   background-color: #ff4a52;
+  background-color: #ff4a52;
 }
 
+.hero .swiper-button-next , .hero .swiper-button-prev{
+   background-color: white;
+   border-radius: 100%;
+}
+.hero .swiper-button-prev{
+   margin-left: 15px !important;
+   top: 425px !important;
+}
+.hero .swiper-button-next{
+   margin-right: 15px;
+   top: 425px !important;
+}
+.hero .swiper-navigation-icon{
+   color: black;
+   width: 8px;
+}
 /* where-togo-area section */
 
 .where-togo-area {
-   background: #040E27;
-   padding: 50px 20px;
-   color: whitesmoke;
-   text-align: center;
+  background: #040e27;
+  padding: 50px 20px;
+  color: whitesmoke;
+  text-align: center;
 }
 
 .where-togo-area h4 {
-   font-size: 17px;
-   font-weight: 400;
-   text-align: left;
-   margin-bottom: 15px;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 15px;
 }
 
 .where-togo-area form input,
 select {
-   padding: 17px;
-   background-color: #040E27;
-   border: 1px solid #43495a;
-   border-radius: 5px;
-   font-size: 15px;
-   color: rgb(179, 172, 172);
-   margin-bottom: 20px;
-   outline: none;
-   width: 100%;
+  padding: 17px;
+  background-color: #040e27;
+  border: 1px solid #43495a;
+  border-radius: 5px;
+  font-size: 15px;
+  color: rgb(179, 172, 172);
+  margin-bottom: 20px;
+  outline: none;
+  width: 100%;
 }
 
 .where-togo-area input[type="date"] {
-   border: none;
-   margin-bottom: 0;
+  border: none;
+  margin-bottom: 0;
 }
 
 .where-togo-area input[type="date"]::-webkit-calendar-picker-indicator {
-   display: none;
+  display: none;
 }
 
 @media screen and (min-width: 992px) {
-   .where-togo-area .select {
-      margin-top: 0 !important;
-   }
+  .where-togo-area .select {
+    margin-top: 0 !important;
+  }
 }
 
 .where-togo-area .select {
-   margin-top: 20px;
+  margin-top: 20px;
 }
 
 .input-and-icon {
-   display: flex;
-   align-items: center;
-   border: 1px solid #43495a;
-   border-radius: 5px;
-   color: rgb(179, 172, 172);
+  display: flex;
+  align-items: center;
+  border: 1px solid #43495a;
+  border-radius: 5px;
+  color: rgb(179, 172, 172);
 }
 
 .input-and-icon i {
-   margin-right: 5px;
+  margin-right: 5px;
 }
 
 .where-togo-area form input:focus {
-   border-color: #ff5e13;
+  border-color: #ff5e13;
 }
 
 .where-togo-area form select:focus {
-   border-color: #ff5e13;
+  border-color: #ff5e13;
 }
 
 .where-togo-area input::placeholder {
-   color: rgb(179, 172, 172);
+  color: rgb(179, 172, 172);
 }
 
 .where-togo-area form button {
-   background-color: #ff4a52;
-   padding: 18px;
-   border: none;
-   border-radius: 5px;
-   color: whitesmoke;
-   font-size: 16px;
-   font-weight: 600;
-   cursor: pointer;
-   width: 100%;
-   transition: all 0.3s ease;
+  background-color: #ff4a52;
+  padding: 18px;
+  border: none;
+  border-radius: 5px;
+  color: whitesmoke;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
 }
 
 .where-togo-area form button:hover {
-   background: #1EC6B6;
-   color: #fff !important;
+  background: #1ec6b6;
+  color: #fff !important;
 }
 
 @media screen and (min-width: 1300px) {
-   .where-togo-area h4 {
-      font-size: 23px;
-   }
+  .where-togo-area h4 {
+    font-size: 23px;
+  }
 }
 
 @media screen and (max-width: 992px) {
-   .search-form div[class^="col-"] {
-      padding: 0;
-   }
+  .search-form div[class^="col-"] {
+    padding: 0;
+  }
 }
 
 /* popular-destination section */
 
 .popular-destination {
-   background-color: #ffffff;
-   text-align: center;
-   padding: 120px 0;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 120px 0;
 }
 
 .popular-destination h1 {
-   font-weight: 400;
-   font-size: 37px;
+  font-weight: 400;
+  font-size: 37px;
 }
 
 .top-desc {
-   margin: 0 auto;
-   margin-top: 20px;
-   color: #777777;
-   font-size: 16px;
-   margin-bottom: 70px;
-   line-height: 28px;
-   width: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: #777777;
+  font-size: 16px;
+  margin-bottom: 70px;
+  line-height: 28px;
+  width: 400px;
 }
 
 .single-destination {
-   border-radius: 5px;
-   margin-bottom: 30px;
-   overflow: hidden;
-   transition: all 0.3s ease;
-   position: relative;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 .single-destination img {
-   width: 100%;
+  width: 100%;
 }
 
 .single-destination::before {
-   background: linear-gradient(to bottom, rgba(4, 14, 39, 0) 0%, rgba(4, 14, 39, 0.7) 100%);
-   content: '';
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-   z-index: 2;
-   position: absolute;
+  background: linear-gradient(
+    to bottom,
+    rgba(4, 14, 39, 0) 0%,
+    rgba(4, 14, 39, 0.7) 100%
+  );
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
 }
 
 .single-destination:hover {
-   transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .single-destination:hover .img-text button {
-   background: #FF4A52;
+  background: #ff4a52;
 }
 
 .single-destination:hover .img-text h3 {
-   color: #FF4A52;
+  color: #ff4a52;
 }
 
 .img-text {
-   position: absolute;
-   bottom: 40px;
-   left: 40px;
-   display: flex;
-   gap: 15px;
-   color: whitesmoke;
-   font-size: 22px;
-   z-index: 99;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  display: flex;
+  gap: 15px;
+  color: whitesmoke;
+  font-size: 22px;
+  z-index: 99;
 }
 
 .img-text h3 {
-   font-weight: 400;
-   transition: all 0.3s ease;
+  font-weight: 400;
+  transition: all 0.3s ease;
 }
 
 .img-text button {
-   border-radius: 15px;
-   width: 70px;
-   border: none;
-   background-color: #1EC6B6;
-   font-size: 12px;
-   color: white;
-   font-weight: 600;
-   cursor: pointer;
-   transition: all 0.3s ease;
+  border-radius: 15px;
+  width: 70px;
+  border: none;
+  background-color: #1ec6b6;
+  font-size: 12px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 /* newletter-area section */
 
 .newletter-area {
-   background-image: url(./Images/newsletter.png.webp);
-   background-repeat: no-repeat;
-   background-position: center center;
-   background-size: cover;
-   padding: 67px;
-   background-blend-mode: multiply;
-   background-color: rgb(79, 81, 105);
-   color: whitesmoke;
+  background-image: url(./Images/newsletter.png.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 67px;
+  background-blend-mode: multiply;
+  background-color: rgb(79, 81, 105);
+  color: whitesmoke;
 }
 
 .newletter-area h2 {
-   font-weight: 400;
+  font-weight: 400;
 }
 
 .newletter-area p {
-   color: #929090;
-   font-size: 15px;
-   width: 280px;
-   line-height: 25px;
-   margin-top: 12px;
+  color: #929090;
+  font-size: 15px;
+  width: 280px;
+  line-height: 25px;
+  margin-top: 12px;
 }
 
 .newletter-area form input {
-   background-color: white;
-   width: 100%;
-   padding: 16px 15px;
-   border-radius: 5px;
-   border: none;
-   font-size: 17px;
-   outline: none;
-   margin-bottom: 15px;
+  background-color: white;
+  width: 100%;
+  padding: 16px 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 17px;
+  outline: none;
+  margin-bottom: 15px;
 }
 
 .newletter-area form input::placeholder {
-   color: rgb(189, 189, 189);
+  color: rgb(189, 189, 189);
 }
 
 .newletter-area button {
-   padding: 16px 15px;
-   background-color: #FF4A52;
-   border: none;
-   border-radius: 5px;
-   color: whitesmoke;
-   font-size: 17px;
-   font-weight: 600;
-   width: 100%;
+  padding: 16px 15px;
+  background-color: #ff4a52;
+  border: none;
+  border-radius: 5px;
+  color: whitesmoke;
+  font-size: 17px;
+  font-weight: 600;
+  width: 100%;
 }
 
 .newletter-area button:hover {
-   background-color: #1EC6B6;
-   transition: 0.3s;
-   cursor: pointer;
+  background-color: #1ec6b6;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
-   .newletter-area button {
-      margin-left: 10px;
-   }
+  .newletter-area button {
+    margin-left: 10px;
+  }
 }
 
 @media screen and (min-width: 992px) {
-   .newletter-area button {
-      width: 100%;
-   }
+  .newletter-area button {
+    width: 100%;
+  }
 }
 
 /* popular-places */
 
 .popular-places {
-   background: whitesmoke;
-   padding: 142px 0 150px;
-   text-align: center;
+  background: whitesmoke;
+  padding: 142px 0 150px;
+  text-align: center;
 }
 
 .popular-places h1 {
-   font-size: 34px;
-   font-weight: 400;
-   margin-bottom: 20px;
+  font-size: 34px;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .popular-places .top-desc {
-   width: 400px;
-   margin: 0 auto;
-   color: #777777;
-   line-height: 29px;
-   font-size: 16px;
-   margin-bottom: 50px;
+  width: 400px;
+  margin: 0 auto;
+  color: #777777;
+  line-height: 29px;
+  font-size: 16px;
+  margin-bottom: 50px;
 }
 
 .popular-places .place-item {
-   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-   border-bottom-left-radius: 5px;
-   border-bottom-right-radius: 5px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .popular-places .place-item:hover {
-   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
 .popular-places .place-item:hover button {
-   background-color: #ff4a52;
+  background-color: #ff4a52;
 }
 
 .popular-places .place-item:hover .bottom-content h2 {
-   color: #ff4a52;
+  color: #ff4a52;
 }
 
 .popular-places .place-item img {
-   border-top-left-radius: 5px;
-   border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .popular-places .place-item button {
-   position: absolute;
-   top: 20px;
-   left: 20px;
-   border: none;
-   border-radius: 25px;
-   padding: 7px 18px 4px 18px;
-   font-size: 17.5px;
-   color: white;
-   background-color: #1EC6B6;
-   cursor: pointer;
-   transition: all 0.3s ease;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: none;
+  border-radius: 25px;
+  padding: 7px 18px 4px 18px;
+  font-size: 17.5px;
+  color: white;
+  background-color: #1ec6b6;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .popular-places .top-img {
-   position: relative;
+  position: relative;
 }
 
 .popular-places .top-img img {
-   width: 100%;
+  width: 100%;
 }
 
 .popular-places .bottom-content {
-   text-align: left;
-   padding: 20px 15px;
+  text-align: left;
+  padding: 20px 15px;
 }
 
 .bottom-content h2 {
-   font-weight: 400;
-   font-size: 23px;
-   margin-bottom: 4px;
-   transition: all 0.3s ease;
-   cursor: pointer;
+  font-weight: 400;
+  font-size: 23px;
+  margin-bottom: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .popular-places .bottom-content small {
-   color: #777777;
-   font-size: 13.8px;
-   margin-bottom: 15px;
-   display: block;
+  color: #777777;
+  font-size: 13.8px;
+  margin-bottom: 15px;
+  display: block;
 }
 
 .popular-places .review-days {
-   display: flex;
-   justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .popular-places .review {
-   display: flex;
-   gap: 5px;
-   align-items: center;
+  display: flex;
+  gap: 5px;
+  align-items: center;
 }
 
 .popular-places .star-icons {
-   color: rgb(192, 192, 20);
-   font-size: 10px;
-   display: flex;
+  color: rgb(192, 192, 20);
+  font-size: 10px;
+  display: flex;
 }
 
 .popular-places .review-p {
-   color: #777777;
-   font-size: 14px;
-   transition: all 0.3s ease;
-   cursor: pointer;
+  color: #777777;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .popular-places .days {
-   display: flex;
-   gap: 10px;
-   align-items: center;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .popular-places .days i {
-   color: #777777;
-   font-size: 13px;
+  color: #777777;
+  font-size: 13px;
 }
 
 .popular-places .days p {
-   color: #777777;
-   font-size: 14px;
-   transition: all 0.3s ease;
-   cursor: pointer;
+  color: #777777;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .popular-places .more-places-btn {
-   padding: 16px 39px;
-   background: #FF4A52;
-   color: whitesmoke;
-   font-size: 16px;
-   border-radius: 5px;
-   border: none;
-   font-weight: 600;
-   margin-top: 60px;
-   cursor: pointer;
-   transition: all 0.3s ease;
+  padding: 16px 39px;
+  background: #ff4a52;
+  color: whitesmoke;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  margin-top: 60px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .popular-places .more-places-btn:hover {
-   background: #1EC6B6;
+  background: #1ec6b6;
 }
 
 /* video-under-popular-places */
 
 .video-area {
-   background-image: url(./Images/video.png.webp);
-   background-repeat: no-repeat;
-   background-position: center center;
-   background-size: cover;
-   padding: 190px 0;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   gap: 30px;
-   color: whitesmoke;
+  background-image: url(./Images/video.png.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 190px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  color: whitesmoke;
 }
 
 .video-area h1 {
-   font-family: "Nothing You Could Do", cursive;
-   font-weight: 400;
-   font-size: 55px;
+  font-family: "Nothing You Could Do", cursive;
+  font-weight: 400;
+  font-size: 55px;
 }
 
 @media screen and (min-width: 768px) {
-   .video-area h1 {
-      font-size: 80px;
-   }
+  .video-area h1 {
+    font-size: 80px;
+  }
 }
 
 .video-area button {
-   background-color: #1EC6B6;
-   border: none;
-   border-radius: 100%;
-   width: 84px;
-   height: 84px;
-   cursor: pointer;
+  background-color: #1ec6b6;
+  border: none;
+  border-radius: 100%;
+  width: 84px;
+  height: 84px;
+  cursor: pointer;
 }
 
 .video-area button i {
-   color: whitesmoke;
-   font-size: 18px;
+  color: whitesmoke;
+  font-size: 18px;
 }
 
 /* under-video */
 
 .travel-variation {
-   padding: 120px;
-   text-align: center;
+  padding: 120px;
+  text-align: center;
 }
 
 .travel-item {
-   padding: 20px;
+  padding: 20px;
 }
 
 .travel-item h3 {
-   font-weight: 400;
-   font-size: 23px;
-   margin-top: 35px;
-   margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 23px;
+  margin-top: 35px;
+  margin-bottom: 10px;
 }
 
 .travel-item p {
-   color: #777777;
-   line-height: 27px;
+  color: #777777;
+  line-height: 27px;
 }
 
 /* testimonials section */
 
 .testimonials {
-   background-color: #f7fafd;
-   padding: 120px 20px;
-   text-align: center;
+  background-color: #f7fafd;
+  padding: 120px 20px;
+  text-align: center;
 }
 
 .testimonials .mySwiper {
-   padding-bottom: 70px;
+  padding-bottom: 70px;
 }
 
 .testimonials .swiper-pagination-bullet {
-   width: 12px;
-   height: 12px;
-   background-color: #999797;
-   border-radius: 100%;
-   cursor: pointer;
+  width: 12px;
+  height: 12px;
+  background-color: #999797;
+  border-radius: 100%;
+  cursor: pointer;
 }
 
 .testimonials .swiper-pagination-bullet-active {
-   background-color: #ff5e13;
+  background-color: #ff5e13;
 }
 
 .testimonials p {
-   max-width: 600px;
-   font-size: 18px;
-   line-height: 26px;
-   margin: 35px auto 15px;
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 35px auto 15px;
 }
 
 .testimonials .testmonial_author h3 {
-   color: #777777;
-   font-weight: 400;
-   font-size: 16px;
+  color: #777777;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 /* recent-trips section */
 
 .recent-trips {
-   padding-top: 150px;
-   padding-bottom: 120px;
-   text-align: center;
+  padding-top: 150px;
+  padding-bottom: 120px;
+  text-align: center;
 }
 
 .recent-trips h1 {
-   font-weight: 400;
-   font-size: 36px;
-   margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 36px;
+  margin-bottom: 60px;
 }
 
 .recent-trips .trip-item {
-   text-align: left;
-   margin-bottom: 30px;
+  text-align: left;
+  margin-bottom: 30px;
 }
 
 .recent-trips .trip-item:hover h3 {
-   color: #FF4A52;
+  color: #ff4a52;
 }
 
 .recent-trips .trip-item img {
-   width: 100%;
-   border-radius: 5px;
+  width: 100%;
+  border-radius: 5px;
 }
 
 .recent-trips .trip-item p {
-   margin: 10px 0;
-   color: #777777;
-   font-size: 17.8px;
+  margin: 10px 0;
+  color: #777777;
+  font-size: 17.8px;
 }
 
 .recent-trips .trip-item h3 {
-   font-size: 22px;
-   font-weight: 400;
-   cursor: pointer;
-   transition: all 0.3s ease;
+  font-size: 22px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 /* footer section */
 
 footer {
-   padding: 115px 0 0;
-   background-color: #040e27;
-   color: whitesmoke;
+  padding: 115px 0 0;
+  background-color: #040e27;
+  color: whitesmoke;
 }
 
 .footer-top {
-   margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .footer-logo {
-   cursor: pointer;
+  cursor: pointer;
 }
 
 footer .footer-widget .desc {
-   margin-top: 35px;
-   color: #a5a4a4;
-   font-size: 14px;
-   line-height: 27px;
+  margin-top: 35px;
+  color: #a5a4a4;
+  font-size: 14px;
+  line-height: 27px;
 }
 
 footer .social-icons {
-   margin-top: 50px;
-   font-size: 14px;
-   display: flex;
-   gap: 25px;
-   color: #c2c0c0;
+  margin-top: 50px;
+  font-size: 14px;
+  display: flex;
+  gap: 25px;
+  color: #c2c0c0;
 }
 
 footer .social-icons i {
-   transition: all 0.3s ease;
-   cursor: pointer;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 footer .social-icons i:hover {
-   color: #FF4A52;
+  color: #ff4a52;
 }
 
 footer h3 {
-   font-weight: 400;
-   margin-bottom: 35px;
-   font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 35px;
+  font-size: 21px;
 }
 
 footer .footer-widget ul {
-   list-style: none;
-   line-height: 30px;
-   font-size: 14px;
-   color: #c2c0c0;
+  list-style: none;
+  line-height: 30px;
+  font-size: 14px;
+  color: #c2c0c0;
 }
 
 footer .footer-widget ul li {
-   cursor: pointer;
-   transition: all 0.3s ease;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 footer .footer-widget ul li:hover {
-   color: #FF4A52;
+  color: #ff4a52;
 }
 
 footer .ul-wrapper {
-   display: flex;
-   gap: 35px;
+  display: flex;
+  gap: 35px;
 }
 
 footer .instagram-feed {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 footer .instagram-feed img {
-   border-radius: 7px;
-   cursor: pointer;
+  border-radius: 7px;
+  cursor: pointer;
 }
 
 /* copy-right-text */
 
 .copy-right-text {
-   padding-bottom: 20px;
-   text-align: center;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 .footer-border {
-   border-top: 1px solid #363E52;
-   padding-bottom: 20px;
+  border-top: 1px solid #363e52;
+  padding-bottom: 20px;
 }
 
 .copy-right-text .copy-right {
-   font-size: 14px;
-   color: #7A838B;
-   margin-bottom: 0;
-   font-weight: 400;
-   text-align: center;
+  font-size: 14px;
+  color: #7a838b;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
 }
 
 .copy-right span {
-   display: inline-block;
-   margin-top: 10px;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 .copy-right-text .copy-right a {
-   color: #FF4A52;
-   cursor: pointer;
-   text-decoration: none;
+  color: #ff4a52;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 492px) {
-   footer .instagram-feed img {
-      width: 140px;
-   }
+  footer .instagram-feed img {
+    width: 140px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-   footer .instagram-feed img {
-      width: 101px;
-   }
+  footer .instagram-feed img {
+    width: 101px;
+  }
 }
 
 @media screen and (min-width: 992px) {
-   footer .instagram-feed img {
-      width: 61px;
-   }
+  footer .instagram-feed img {
+    width: 61px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-   footer .instagram-feed img {
-      width: 76px;
-   }
+  footer .instagram-feed img {
+    width: 76px;
+  }
 }
 
 /* scroll-top */
 
 .scroll-top {
-   background: rgb(255, 94, 19);
-   font-size: 20px;
-   width: 50px;
-   height: 50px;
-   position: fixed;
-   right: 30px;
-   bottom: 30px;
-   cursor: pointer;
-   transition: all 0.3s ease;
-   border-radius: 50%;
-   align-items: center;
-   justify-content: center;
-   display: none;
+  background: rgb(255, 94, 19);
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: none;
 }
 
 .scroll-top i {
-   color: white;
+  color: white;
 }
 
 .scroll-top:hover {
-   background: rgb(31, 31, 31);
+  background: rgb(31, 31, 31);
 }
